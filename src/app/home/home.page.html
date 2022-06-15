@@ -7,26 +7,33 @@
 <ion-content>
   <form [formGroup]="tell2Form" (ngSubmit)="onDescSave()" class="phoneCollection">
     <h4 class="qTextContainer">TELL US WHAT HAPPENED</h4>
-    <ion-item>
-      <ion-label class="qTextContainer" position="floating">Item 1</ion-label>
-      <ion-textarea formControlName="itemOne" ></ion-textarea>
-    </ion-item>
-    <ion-item>
-      <ion-label class="qTextContainer" position="floating">Item 2</ion-label>
-      <ion-textarea formControlName="itemTwo" ></ion-textarea>
-    </ion-item>
-    <ion-col>
-    <ion-item>
-      <ion-label class="qTextContainer" position="floating">Item 3</ion-label>
-      <ion-textarea formControlName="itemThree" ></ion-textarea>
-    </ion-item>
-    </ion-col>
-    <ion-col>
-      <ion-item>
-        <ion-label class="qTextContainer" position="floating">Item 4</ion-label>
-        <ion-textarea formControlName="itemFour" ></ion-textarea>
-      </ion-item>
-    </ion-col>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label class="qTextContainer" position="floating">Item 1</ion-label>
+          <ion-textarea formControlName="itemOne" ></ion-textarea>
+        </ion-item>
+      </ion-col>
+      
+      <ion-col>
+        <ion-item>
+          <ion-label class="qTextContainer" position="floating">Item 2</ion-label>
+          <ion-textarea formControlName="itemTwo" ></ion-textarea>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label class="qTextContainer" position="floating">Item 3</ion-label>
+          <ion-textarea formControlName="itemThree" ></ion-textarea>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label class="qTextContainer" position="floating">Item 4</ion-label>
+          <ion-textarea formControlName="itemFour" ></ion-textarea>
+        </ion-item>
+      </ion-col>
+    </ion-row>
     
 
     <ion-row>

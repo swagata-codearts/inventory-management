@@ -8,38 +8,38 @@
     <ion-row>
       <ion-col>
         <ion-item lines="full">
-          <ion-label position="floating">Item One</ion-label>
+          <ion-label position="stacked">Item One</ion-label>
           <ion-input formControlName="itemOne" type="number"></ion-input>
         </ion-item>
         <span class="error ion-padding" *ngIf="isSubmitted && errorControl.itemOne.errors?.required">
-          Item One must be a number.
+          Must be a number.
         </span>
       </ion-col>
       <ion-col>
         <ion-item lines="full">
-          <ion-label position="floating">Item Two</ion-label>
+          <ion-label position="stacked">Item Two</ion-label>
           <ion-input formControlName="itemTwo" type="number"></ion-input>
         </ion-item>
         <span class="error ion-padding" *ngIf="isSubmitted && errorControl.itemTwo.errors?.required">
-          Item One must be a number.
+          Must be a number.
         </span>
       </ion-col>
       <ion-col>
         <ion-item lines="full">
-          <ion-label position="floating">Item Three</ion-label>
+          <ion-label position="stacked">Item Three</ion-label>
           <ion-input formControlName="itemThree" type="number"></ion-input>
         </ion-item>
         <span class="error ion-padding" *ngIf="isSubmitted && errorControl.itemThree.errors?.required">
-          Item One must be a number.
+          Must be a number.
         </span>
       </ion-col>
       <ion-col>
         <ion-item lines="full">
-          <ion-label position="floating">Item Four</ion-label>
+          <ion-label position="stacked">Item Four</ion-label>
           <ion-input formControlName="itemFour" type="number"></ion-input>
         </ion-item>
-        <span class="error ion-padding" *ngIf="isSubmitted && errorControl.itemFour.errors?.required">
-          Item One must be a number.
+        <span class="error ion-padding" color="danger" *ngIf="isSubmitted && errorControl.itemFour.errors?.required">
+          Must be a number.
         </span>
       </ion-col>
     </ion-row>

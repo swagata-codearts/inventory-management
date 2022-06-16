@@ -4,6 +4,3 @@ export class Step{
     itemThree:number;
     itemFour:number;
 }
-export class StepTwo {
-    productOne:number;
-}

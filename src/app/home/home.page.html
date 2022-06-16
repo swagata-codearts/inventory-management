@@ -56,13 +56,73 @@
 
   <form [formGroup]="ionicForm2" (ngSubmit)="submitForm2()" novalidate>
     <ion-row>
-      <ion-col size="12" size-sm="6" size-md="3">
+      <ion-col size="3">
+        <ion-item lines="none">
+          <ion-label>Product 1</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="9">
         <ion-item lines="full">
-          <ion-label position="stacked">Product 1</ion-label>
           <ion-input formControlName="productOne" type="number"></ion-input>
         </ion-item>
         <!-- <span class="error" *ngIf="isSubmitted && errorControl.itemOne.errors?.required"> -->
           <span class="error ion-padding" *ngIf=" ionicForm2.controls.productOne.touched && ionicForm2.controls.productOne.invalid">
+          *Must be a number.
+        </span>
+      </ion-col>
+      <ion-col size="3">
+        <ion-item lines="none">
+          <ion-label>Product 2</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="9">
+        <ion-item lines="full">
+          <ion-input formControlName="productTwo" type="number"></ion-input>
+        </ion-item>
+        <!-- <span class="error" *ngIf="isSubmitted && errorControl.itemTwo.errors?.required"> -->
+          <span class="error ion-padding" *ngIf=" ionicForm2.controls.productTwo.touched && ionicForm2.controls.productTwo.invalid">
+          *Must be a number.
+        </span>
+      </ion-col>
+      <ion-col size="3">
+        <ion-item lines="none">
+          <ion-label>Product 3</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="9">
+        <ion-item lines="full">
+          <ion-input formControlName="productThree" type="number"></ion-input>
+        </ion-item>
+        <!-- <span class="error" *ngIf="isSubmitted && errorControl.itemThree.errors?.required"> -->
+          <span class="error ion-padding" *ngIf=" ionicForm2.controls.productThree.touched && ionicForm2.controls.productThree.invalid">
+          *Must be a number.
+        </span>
+      </ion-col>
+      <ion-col size="3" >
+        <ion-item lines="none">
+          <ion-label>Product 4</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="9" >
+        <ion-item lines="full">
+          <ion-input formControlName="productFour" type="number"></ion-input>
+        </ion-item>
+        <!-- <span class="error" *ngIf="isSubmitted && errorControl.itemFour.errors?.required"> -->
+          <span class="error ion-padding" *ngIf=" ionicForm2.controls.productFour.touched && ionicForm2.controls.productFour.invalid">
+          *Must be a number.
+        </span>
+      </ion-col>
+      <ion-col size="3">
+        <ion-item lines="none">
+          <ion-label>Product 5</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="9">
+        <ion-item lines="full">
+          <ion-input formControlName="productFive" type="number"></ion-input>
+        </ion-item>
+        <!-- <span class="error" *ngIf="isSubmitted && errorControl.itemFive.errors?.required"> -->
+          <span class="error ion-padding" *ngIf=" ionicForm2.controls.productFive.touched && ionicForm2.controls.productFive.invalid">
           *Must be a number.
         </span>
       </ion-col>

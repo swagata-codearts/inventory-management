@@ -6,39 +6,43 @@
 <ion-content>
   <form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
     <ion-row>
-      <ion-col>
+      <ion-col size="12" size-sm="6" size-md="3">
         <ion-item lines="full">
           <ion-label position="stacked">Item One</ion-label>
           <ion-input formControlName="itemOne" type="number"></ion-input>
         </ion-item>
-        <span class="error" *ngIf="isSubmitted && errorControl.itemOne.errors?.required || ionicForm.controls.itemOne.touched">
+        <!-- <span class="error" *ngIf="isSubmitted && errorControl.itemOne.errors?.required"> -->
+          <span class="error ion-padding" *ngIf=" ionicForm.controls.itemOne.touched && ionicForm.controls.itemOne.invalid">
           *Must be a number.
         </span>
       </ion-col>
-      <ion-col>
+      <ion-col size="12" size-sm="6" size-md="3">
         <ion-item lines="full">
           <ion-label position="stacked">Item Two</ion-label>
           <ion-input formControlName="itemTwo" type="number"></ion-input>
         </ion-item>
-        <span class="error" *ngIf="isSubmitted && errorControl.itemTwo.errors?.required || ionicForm.controls.itemTwo.touched">
+        <!-- <span class="error" *ngIf="isSubmitted && errorControl.itemTwo.errors?.required"> -->
+        <span class="error ion-padding" *ngIf=" ionicForm.controls.itemTwo.touched && ionicForm.controls.itemTwo.invalid">
           *Must be a number.
         </span>
       </ion-col>
-      <ion-col>
+      <ion-col size="12" size-sm="6" size-md="3">
         <ion-item lines="full">
           <ion-label position="stacked">Item Three</ion-label>
           <ion-input formControlName="itemThree" type="number"></ion-input>
         </ion-item>
-        <span class="error" *ngIf="isSubmitted && errorControl.itemThree.errors?.required || ionicForm.controls.itemThree.touched">
+        <!-- <span class="error" *ngIf="isSubmitted && errorControl.itemThree.errors?.required"> -->
+          <span class="error ion-padding" *ngIf=" ionicForm.controls.itemThree.touched && ionicForm.controls.itemThree.invalid">
           *Must be a number.
         </span>
       </ion-col>
-      <ion-col>
+      <ion-col size="12" size-sm="6" size-md="3">
         <ion-item lines="full">
           <ion-label position="stacked">Item Four</ion-label>
           <ion-input formControlName="itemFour" type="number"></ion-input>
         </ion-item>
-        <span class="error" color="danger" *ngIf="isSubmitted && errorControl.itemFour.errors?.required || ionicForm.controls.itemFour.touched">
+        <!-- <span class="error" color="danger" *ngIf="isSubmitted && errorControl.itemFour.errors?.required"> -->
+          <span class="error ion-padding" *ngIf=" ionicForm.controls.itemFour.touched && ionicForm.controls.itemFour.invalid">
           *Must be a number.
         </span>
       </ion-col>

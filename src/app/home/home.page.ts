@@ -21,7 +21,7 @@ export class HomePage implements OnInit {
       
     })
   }
-  
+      
   get errorControl() {
     return this.ionicForm.controls;
   }

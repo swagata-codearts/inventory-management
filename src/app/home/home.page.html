@@ -11,8 +11,8 @@
           <ion-label position="stacked">Item One</ion-label>
           <ion-input formControlName="itemOne" type="number"></ion-input>
         </ion-item>
-        <span class="error ion-padding" *ngIf="isSubmitted && errorControl.itemOne.errors?.required">
-          Must be a number.
+        <span class="error" *ngIf="isSubmitted && errorControl.itemOne.errors?.required || ionicForm.controls.itemOne.touched">
+          *Must be a number.
         </span>
       </ion-col>
       <ion-col>
@@ -20,8 +20,8 @@
           <ion-label position="stacked">Item Two</ion-label>
           <ion-input formControlName="itemTwo" type="number"></ion-input>
         </ion-item>
-        <span class="error ion-padding" *ngIf="isSubmitted && errorControl.itemTwo.errors?.required">
-          Must be a number.
+        <span class="error" *ngIf="isSubmitted && errorControl.itemTwo.errors?.required || ionicForm.controls.itemTwo.touched">
+          *Must be a number.
         </span>
       </ion-col>
       <ion-col>
@@ -29,8 +29,8 @@
           <ion-label position="stacked">Item Three</ion-label>
           <ion-input formControlName="itemThree" type="number"></ion-input>
         </ion-item>
-        <span class="error ion-padding" *ngIf="isSubmitted && errorControl.itemThree.errors?.required">
-          Must be a number.
+        <span class="error" *ngIf="isSubmitted && errorControl.itemThree.errors?.required || ionicForm.controls.itemThree.touched">
+          *Must be a number.
         </span>
       </ion-col>
       <ion-col>
@@ -38,14 +38,14 @@
           <ion-label position="stacked">Item Four</ion-label>
           <ion-input formControlName="itemFour" type="number"></ion-input>
         </ion-item>
-        <span class="error ion-padding" color="danger" *ngIf="isSubmitted && errorControl.itemFour.errors?.required">
-          Must be a number.
+        <span class="error" color="danger" *ngIf="isSubmitted && errorControl.itemFour.errors?.required || ionicForm.controls.itemFour.touched">
+          *Must be a number.
         </span>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-button type="submit" color="danger" expand="block">Submit</ion-button>
+        <ion-button type="submit" color="success" expand="block" [disabled]="!ionicForm.valid">Submit</ion-button>
       </ion-col>
     </ion-row>
   </form>

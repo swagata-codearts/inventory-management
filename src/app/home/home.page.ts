@@ -14,7 +14,7 @@ export class HomePage implements OnInit {
   constructor(public formBuilder: FormBuilder) { }
   ngOnInit() {
     this.ionicForm = this.formBuilder.group({
-      itemOne: ['', [Validators.required, Validators.minLength(1)]],
+      itemOne: ['', [Validators.required, Validators.pattern('^[0-9]+$')]],
       itemTwo: ['', [Validators.required, Validators.minLength(1)]],
       itemThree: ['', [Validators.required, Validators.minLength(1)]],
       itemFour: ['', [Validators.required, Validators.minLength(1)]],

@@ -25,3 +25,16 @@
 #container a {
   text-decoration: none;
 }
+
+.error  {
+  color: var(--ion-color-danger);
+  font-size: 12px;
+}
+
+::ng-deep input[type=number]::-webkit-inner-spin-button,
+::ng-deep input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+margin: 0;
+}

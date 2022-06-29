@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'weather',
     loadChildren: () => import('./weather/weather.module').then( m => m.WeatherPageModule)
   },
+  {
+    path: 'total-inventory',
+    loadChildren: () => import('./total-inventory/total-inventory.module').then( m => m.TotalInventoryPageModule)
+  },
 
 ];
 

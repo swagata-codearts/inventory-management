@@ -4,13 +4,13 @@
             <ion-grid>
                 <ion-row>
                   <ion-col>
-                    <div class="ion-text-center"><ion-icon name="home-outline" class="cus-f-icon"></ion-icon></div> 
+                    <div class="ion-text-center"><ion-icon (click)="homeClick()" name="home-outline" class="cus-f-icon"></ion-icon></div> 
                   </ion-col>
                   <ion-col>
-                    <div class="ion-text-center"><ion-icon name="calendar-outline" class="cus-f-icon"></ion-icon></div> 
+                    <div class="ion-text-center"><ion-icon (click)="totalInventoryClick()" name="calendar-outline" class="cus-f-icon"></ion-icon></div> 
                   </ion-col>
                   <ion-col>                  
-                    <div class="ion-text-center"><ion-icon routerLink="/about" name="chatbubble-outline" class="cus-f-icon"></ion-icon></div> 
+                    <div class="ion-text-center"><ion-icon (click)="weatherClick()" name="cloud-outline" class="cus-f-icon"></ion-icon></div> 
                   </ion-col>
                 </ion-row>
               </ion-grid>

@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { WeatherPageRoutingModule } from './weather-routing.module';
+import { TotalInventoryPageRoutingModule } from './total-inventory-routing.module';
 
-import { WeatherPage } from './weather.page';
+import { TotalInventoryPage } from './total-inventory.page';
 import { FooterComponent } from '../components/footer/footer.component';
 
 @NgModule({
@@ -14,11 +14,11 @@ import { FooterComponent } from '../components/footer/footer.component';
     CommonModule,
     FormsModule,
     IonicModule,
-    WeatherPageRoutingModule
+    TotalInventoryPageRoutingModule
   ],
   declarations: [
-    WeatherPage,
+    TotalInventoryPage,
     FooterComponent
   ]
 })
-export class WeatherPageModule {}
+export class TotalInventoryPageModule {}

@@ -14,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
 export class AboutPage implements OnInit {
   
   myName = 'Swagata';
-  posts:any;
+  posts: any;
   
 
   constructor(private http:HttpClient) { }

@@ -4,7 +4,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content [fullscreen]="true">
+  <div class="weather-main">
+    <span class="city">Kolkata</span>
+    <span class="day-time">Thursday, 11.30am</span>
+    <div class="icon">
+      <img src="../../assets/icon/weather-icon-main.png" alt="">
+    </div>
+    <span class="weather-description">Cloudy</span>
+    <span class="tempareture">24c</span>
+  </div>
 </ion-content>
 <app-footer></app-footer>

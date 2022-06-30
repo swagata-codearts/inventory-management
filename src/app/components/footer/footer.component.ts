@@ -11,7 +11,7 @@ export class FooterComponent implements OnInit {
  constructor(private router: Router) {}
  
  ngOnInit() {}
- weatherClick()  {this.router.navigate(['weather'])}
+ weatherClick(){this.router.navigate(['weather'])}
  totalInventoryClick(){this.router.navigate(['total-inventory'])}
  homeClick(){this.router.navigate(['home'])}
   

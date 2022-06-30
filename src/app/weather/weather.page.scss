@@ -1,0 +1,48 @@
+
+
+ion-content {
+    --ion-font-family: 'Lato', sans-serif;
+    --background: linear-gradient(184deg, rgba(0,86,141,1) 0%, rgba(21,120,172,1) 45%, rgba(75,200,255,1) 100%);
+    --ion-text-color: rgb(255, 255, 255);
+}
+
+ion-header  {
+    --background: rgba(21,120,172,1) !important;
+}
+
+.weather-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .city {
+        font-size: 40px;
+        font-weight: 700;
+        padding-top: 0.2em;
+    }
+
+    & .icon {
+        justify-content: center;
+        display: flex;
+
+        & img {
+            width: 49%;
+          }
+    }
+
+    & .weather-description {
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+
+    & .tempareture {
+        font-size: 76px;
+        font-weight: 200;
+      }
+}
+
+.day,
+.precipitation {
+    font-size: 14px;
+  }

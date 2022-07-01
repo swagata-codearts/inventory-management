@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { observable } from 'rxjs';
+import { Observable, observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,5 +8,9 @@ import { observable } from 'rxjs';
 export class WeatherService {
 
   constructor(private http: HttpClient) { }
-  
+
+  getWeatherData(): Observable(any) {
+
+    
+  }
 }

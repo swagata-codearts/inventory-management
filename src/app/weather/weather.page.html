@@ -6,20 +6,20 @@
 
 <ion-content [fullscreen]="true">
   <div class="weather-main">
-    <span class="city">Kolkata</span>
-    <span class="day-time">{{ res.main.temp }}</span>
+    <span class="city">{{res.location.name}}</span>
+    <span class="day-time">{{res.forecast.forecastday[0].date}}</span>
     <div class="icon">
-      <img src="../../assets/icon/weather-icon-main.png" alt="">
+      <img src="{{res.current.condition.icon}}" alt="">
     </div>
-    <span class="weather-description">{{ res.main.temp }}</span>
-    <span class="tempareture">24°c</span>
+    <span class="weather-description">{{res.current.condition.text}}</span>
+    <span class="tempareture">{{res.current.temp_c}}</span>
   </div>
 
   <!-- 7 Day Forecast grid -->
   <ion-grid>
     <!-- Day row -->
     <ion-row>
-      <ion-col class="day">Tue</ion-col>
+      <ion-col class="day">{{res.forecast.forecastday | date :  "dd.MM.y" }}</ion-col>
       <ion-col class="day">Wed</ion-col>
       <ion-col class="day">Thur</ion-col>
       <ion-col class="day">Fri</ion-col>

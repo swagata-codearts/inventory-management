@@ -7,11 +7,11 @@
 <ion-content [fullscreen]="true">
   <div class="weather-main">
     <span class="city">Kolkata</span>
-    <span class="day-time">Monday, 11.30am</span>
+    <span class="day-time">{{ res.main.temp }}</span>
     <div class="icon">
       <img src="../../assets/icon/weather-icon-main.png" alt="">
     </div>
-    <span class="weather-description">Cloudy</span>
+    <span class="weather-description">{{ res.main.temp }}</span>
     <span class="tempareture">24°c</span>
   </div>
 

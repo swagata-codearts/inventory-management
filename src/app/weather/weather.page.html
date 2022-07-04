@@ -6,66 +6,51 @@
 
 <ion-content [fullscreen]="true">
   <div class="weather-main">
-    <span class="city">{{ res.location.name }}</span>
-    <span class="day-time">{{ res.forecast.forecastday[0].date }}</span>
+    <span class="city">{{res.location.name}}</span>
+    <span class="day-time">{{res.forecast.forecastday[0].date}}</span>
     <div class="icon">
       <img src="{{res.current.condition.icon}}" alt="">
     </div>
-    <span class="weather-description">{{ res.current.condition.text }}</span>
-    <span class="tempareture">{{res.current.temp_c}}°c</span>
+    <span class="weather-description">{{res.current.condition.text}}</span>
+    <span class="tempareture">{{res.current.temp_c}}</span>
   </div>
 
   <!-- 7 Day Forecast grid -->
   <ion-grid>
     <!-- Day row -->
     <ion-row>
-      <ion-col class="day">Tue</ion-col>
-      <ion-col class="day">Wed</ion-col>
-      <ion-col class="day">Thur</ion-col>
-      <ion-col class="day">Fri</ion-col>
-      <ion-col class="day">Sat</ion-col>
-      <ion-col class="day">Sun</ion-col>
-      <ion-col class="day">Mon</ion-col>
+      <ion-col class="day">{{res.forecast.forecastday[0].date_epoch | day }}</ion-col>
+      <ion-col class="day">{{res.forecast.forecastday[1].date_epoch | day }}</ion-col>
+      <ion-col class="day">{{res.forecast.forecastday[2].date_epoch | day }}</ion-col>
+      
     </ion-row>
     <!-- Chances of Precipitation -->
     <ion-row>
       <ion-col class="precipitation">60%</ion-col>
       <ion-col class="precipitation">-</ion-col>
       <ion-col class="precipitation">20%</ion-col>
-      <ion-col class="precipitation">-</ion-col>
-      <ion-col class="precipitation">60%</ion-col>
-      <ion-col class="precipitation">-</ion-col>
-      <ion-col class="precipitation">-</ion-col>
+      
     </ion-row>
     <!-- Weather icon -->
     <ion-row>
       <ion-col class="icon-sm"><img src="../../assets/x2.png" alt="Weather icon"></ion-col>
       <ion-col class="icon-sm"><img src="../../assets/x2.png" alt="Weather icon"></ion-col>
       <ion-col class="icon-sm"><img src="../../assets/x2.png" alt="Weather icon"></ion-col>
-      <ion-col class="icon-sm"><img src="../../assets/x2.png" alt="Weather icon"></ion-col>
-      <ion-col class="icon-sm"><img src="../../assets/x2.png" alt="Weather icon"></ion-col>
-      <ion-col class="icon-sm"><img src="../../assets/x2.png" alt="Weather icon"></ion-col>
-      <ion-col class="icon-sm"><img src="../../assets/x2.png" alt="Weather icon"></ion-col>
+      
     </ion-row>
     <!-- Max Temperature -->
     <ion-row>
       <ion-col class="hi-sm">25°c</ion-col>
       <ion-col class="hi-sm">25°c</ion-col>
       <ion-col class="hi-sm">25°c</ion-col>
-      <ion-col class="hi-sm">25°c</ion-col>
-      <ion-col class="hi-sm">25°c</ion-col>
-      <ion-col class="hi-sm">25°c</ion-col>
-      <ion-col class="hi-sm">25°c</ion-col>
+      
     </ion-row>
     <!-- Min Temperature -->
     <ion-row>
       <ion-col class="lo-sm">12°c</ion-col>
       <ion-col class="lo-sm">12°c</ion-col>
       <ion-col class="lo-sm">12°c</ion-col>
-      <ion-col class="lo-sm">12°c</ion-col>
-      <ion-col class="lo-sm">12°c</ion-col>
-      <ion-col class="lo-sm">12°c</ion-col>
-      <ion-col class="lo-sm">12°c</ion-col>
+     
     </ion-row>
   </ion-grid>
 </ion-content>

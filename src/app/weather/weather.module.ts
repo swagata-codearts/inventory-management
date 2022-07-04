@@ -9,6 +9,8 @@ import { WeatherPageRoutingModule } from './weather-routing.module';
 import { WeatherPage } from './weather.page';
 import { FooterComponent } from '../components/footer/footer.component';
 
+import { DayPipe } from '../pipes/day.pipe';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { FooterComponent } from '../components/footer/footer.component';
   ],
   declarations: [
     WeatherPage,
-    FooterComponent
+    FooterComponent,
+    DayPipe
   ]
 })
 export class WeatherPageModule {}

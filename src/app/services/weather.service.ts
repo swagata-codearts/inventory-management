@@ -14,7 +14,7 @@ export class WeatherService {
     // let lon =  88.478187;
 
     let apiId = '11b74bd067504f82a42172040221606';
-    let queryString = 'http://api.weatherapi.com/v1/forecast.json?key='+ apiId +'&q='+ 'Kolkata'+'&days=7gi&aqi=no&alerts=no';
+    let queryString = 'http://api.weatherapi.com/v1/forecast.json?key='+ apiId +'&q='+ 'Kolkata'+'&days=15&aqi=no&alerts=no';
 
     return this.http.get(queryString);
 

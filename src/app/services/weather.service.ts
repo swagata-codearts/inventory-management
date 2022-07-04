@@ -10,10 +10,11 @@ export class WeatherService {
   constructor(private http: HttpClient) {}
 
   getWeatherData(): Observable<any>{
-    let lat = 22.717743;
-    let lon =  88.478187;
-    let apiId = '713b46f6d6e8382350087f18c2eeb0d1';
-    let queryString = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=metric&exclude=minutely,alerts&appid=' + apiId;
+    // let lat = 22.717743;
+    // let lon =  88.478187;
+
+    let apiId = '11b74bd067504f82a42172040221606';
+    let queryString = 'http://api.weatherapi.com/v1/forecast.json?key='+ apiId +'&q='+ 'Kolkata'+'&days=1&aqi=no&alerts=no';
 
     return this.http.get(queryString);
 

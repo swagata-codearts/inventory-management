@@ -26,9 +26,9 @@
     </ion-row>
     <!-- Chances of Precipitation -->
     <ion-row>
-      <ion-col class="precipitation">60%</ion-col>
-      <ion-col class="precipitation">-</ion-col>
-      <ion-col class="precipitation">20%</ion-col>
+      <ion-col class="precipitation">{{res.forecast.forecastday[0].day.avgtemp_c }}</ion-col>
+      <ion-col class="precipitation">{{res.forecast.forecastday[1].day.avgtemp_c }}</ion-col>
+      <ion-col class="precipitation">{{res.forecast.forecastday[2].day.avgtemp_c }}</ion-col>
       
     </ion-row>
     <!-- Weather icon -->
@@ -52,6 +52,31 @@
       <ion-col class="lo-sm">12°c</ion-col>
      
     </ion-row>
+    <ion-row>
+      <ion-col class="lo-sm">12°c</ion-col>
+      <ion-col class="lo-sm">12°c</ion-col>
+      <ion-col class="lo-sm">12°c</ion-col>
+     
+    </ion-row>
+    <ion-row>
+      <ion-col class="lo-sm">12°c</ion-col>
+      <ion-col class="lo-sm">12°c</ion-col>
+      <ion-col class="lo-sm">12°c</ion-col>
+     
+    </ion-row>
+    <ion-row>
+      <ion-col class="lo-sm">12°c</ion-col>
+      <ion-col class="lo-sm">12°c</ion-col>
+      <ion-col class="lo-sm">12°c</ion-col>
+     
+    </ion-row>
+    <ion-row>
+      <ion-col class="lo-sm">12°c</ion-col>
+      <ion-col class="lo-sm">12°c</ion-col>
+      <ion-col class="lo-sm">12°c</ion-col>
+     
+    </ion-row>
   </ion-grid>
+  
 </ion-content>
 <app-footer></app-footer>

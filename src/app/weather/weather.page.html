@@ -33,9 +33,9 @@
     </ion-row>
     <!-- Weather icon -->
     <ion-row>
-      <ion-col class="icon-sm"><img src="../../assets/x2.png" alt="Weather icon"></ion-col>
-      <ion-col class="icon-sm"><img src="../../assets/x2.png" alt="Weather icon"></ion-col>
-      <ion-col class="icon-sm"><img src="../../assets/x2.png" alt="Weather icon"></ion-col>
+      <ion-col class="icon-sm"><img src="{{res.forecast.forecastday[0].day.condition.icon}}" alt="Weather icon"></ion-col>
+      <ion-col class="icon-sm"><img src="{{res.forecast.forecastday[1].day.condition.icon}}" alt="Weather icon"></ion-col>
+      <ion-col class="icon-sm"><img src="{{res.forecast.forecastday[2].day.condition.icon}}" alt="Weather icon"></ion-col>
       
     </ion-row>
     <!-- Max Temperature -->

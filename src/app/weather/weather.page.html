@@ -40,16 +40,16 @@
     </ion-row>
     <!-- Max Temperature -->
     <ion-row>
-      <ion-col class="hi-sm">25°c</ion-col>
-      <ion-col class="hi-sm">25°c</ion-col>
-      <ion-col class="hi-sm">25°c</ion-col>
+      <ion-col class="hi-sm">{{res.forecast.forecastday[0].day.maxtemp_c}}°c</ion-col>
+      <ion-col class="hi-sm">{{res.forecast.forecastday[1].day.maxtemp_c}}°c</ion-col>
+      <ion-col class="hi-sm">{{res.forecast.forecastday[2].day.maxtemp_c}}°c</ion-col>
       
     </ion-row>
     <!-- Min Temperature -->
     <ion-row>
-      <ion-col class="lo-sm">12°c</ion-col>
-      <ion-col class="lo-sm">12°c</ion-col>
-      <ion-col class="lo-sm">12°c</ion-col>
+      <ion-col class="lo-sm">{{res.forecast.forecastday[0].day.mintemp_c}}°c</ion-col>
+      <ion-col class="lo-sm">{{res.forecast.forecastday[1].day.mintemp_c}}°c</ion-col>
+      <ion-col class="lo-sm">{{res.forecast.forecastday[2].day.mintemp_c}}°c</ion-col>
      
     </ion-row>
     

@@ -6,7 +6,10 @@
 
 <ion-content [fullscreen]="true">
   <div class="weather-main">
-    <span class="city">{{res.location.name}}</span>
+    <span class="city">
+      <!-- <ion-input type="text" text-right id="input" [(ngModel)]="inputValue"></ion-input> -->
+      <ion-searchbar [(ngModel)]="cityName" (ngModelChange)="getWeatherData()" animated></ion-searchbar>
+    </span>
     <span class="day-time">{{res.forecast.forecastday[0].date}}</span>
     <div class="icon">
       <img src="{{res.current.condition.icon}}" alt="">

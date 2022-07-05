@@ -9,19 +9,24 @@ import { WeatherService } from '../services/weather.service';
 export class WeatherPage implements OnInit {
 
   public res;
-
+  inputValue: string = "";
+  cityName = "";
   constructor(
-    private weatherAPI: WeatherService
+    private weatherAPI: WeatherService,
+    private  nameCity: WeatherService
     ) { }
 
   ngOnInit() {
     this.getWeatherData();
   }
 
+  
   getWeatherData()  {
     this.weatherAPI.getWeatherData().subscribe((response) => {
       this.res = response;
       console.log(this.res);
+      console.log(this.cityName)
+      
     })
   }
 }
